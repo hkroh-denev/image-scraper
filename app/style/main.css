@@ -1,0 +1,14 @@
+html, body, .container-fluid {
+	width: 100%;
+	height: 100%;
+	color: white;
+	background-color: black;
+	overflow: hidden;
+}
+
+div.cropper {
+	display: block; 
+	position: absolute; 
+	border: solid 3px #ffff00; 
+	visibility:false;
+}

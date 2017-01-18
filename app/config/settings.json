@@ -1,0 +1,29 @@
+{
+	"System": {
+		"Directories": {
+			"cache": "./cache",
+			"download": "./download",
+			"output": "./output",
+			"working": "./working"
+		}
+	},
+	"UserInterface": {
+		"Window": {
+			"init_width": 1920,
+			"init_height": 1080
+		},
+		"Image": {
+			"display_max_width": 800,
+			"display_max_height": 600
+		}
+	},
+	"Preprocessing": {
+		"Padding": {
+			"width_unit": 256,
+			"height_unit": 256
+		},
+		"Blur": {
+			"pixel_range": 5
+		}
+	}
+}

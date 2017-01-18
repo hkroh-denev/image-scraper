@@ -1,0 +1,21 @@
+module.exports = {
+	LeftKey: 37,
+	UpKey: 38,
+	RightKey: 39,
+	DownKey: 40,
+	EnterKey: 13,
+	ShiftKey: 16,
+	ControlKey: 17,
+	AltKey: 18,
+	EscKey: 27,
+	SpaceBar: 32,
+	Bkey: 66,
+	Ckey: 67,
+	Dkey: 68,
+	Rkey: 82,
+	Zkey: 90,
+	MacCommandKey: 91,
+	F1Key: 112,
+	PlusKey: 187,
+	MinusKey: 189
+};

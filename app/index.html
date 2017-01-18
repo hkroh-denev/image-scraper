@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ImageScraper</title>
+	<link rel="stylesheet" href="style/main.css">
+		
+</head>
+
+<body>
+<h1>Please select data source</h1>
+
+<div>
+<div id="warning_msg" style="display:none;">
+</div>
+<a href="#" id="rename_link" style="color:skyblue; display:none">Rename output folder</a><br>
+<a href="#" id="clean_output" style="color:skyblue; display:none">Delete files in output folder</a>
+</div>
+
+<p> From local files: &nbsp; 
+<button id="openfile" type="button">Open</button>
+</p>
+
+<p> Google image search:  (up to 100 images)&nbsp; 
+<input id="google_keyword" type="text"/>
+<input id="google_count" type="number" value="100" />
+<button id="googlesearch" type="button">Search</button>
+</p>
+
+<p> Naver image search: (up to 1000 images) &nbsp; 
+<input id="naver_keyword" type="text"/>
+<input id="naver_count" type="number" value="100" />
+<button id="naversearch" type="button">Search</button>
+</p>
+
+<!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" 
+onload="window.$ = window.jQuery = module.exports;">
+</script> -->
+<script src="js/index.js"></script>
+
+</body>
+</html>
