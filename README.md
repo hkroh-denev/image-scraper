@@ -29,13 +29,6 @@ Keyboard command:
 
 * Right Arrow: Save current image and load next image
 * Left Arrow: Load previous original (not processed) image
-<<<<<<< HEAD
-* Space Bar: Skip current image (not copying to output directory), and load next image
-* D Key : Delete mode, filling with white pixel in dragging area
-* B Key : Blur mode, applying blur in dragging area
-* C Key : Crop mode, crop and set working image in dragging area (default mode)
-* R Key : Reload, canceling the processing and load original image
-=======
 * Space Bar or Down Arrow: Skip current image (not copying to output directory), and load next image
 * D Key: Delete mode, filling with white pixel in dragging area
 * B Key: Blur mode, applying blur in dragging area
@@ -46,7 +39,6 @@ Important Directories:
 
 * ./app/download: For downloaded files
 * ./app/output: For processed files (cropped, etc)
->>>>>>> refs/heads/master
 
 ### Frameworks & Tools
 This is by standing on the shoulders of these awesome projects.

@@ -28,14 +28,6 @@ var cacheDirectory = path.join(__dirname, settings.System.Directories.cache);
 var downloadDirectory = path.join(__dirname, settings.System.Directories.download);
 var outputDirectory = path.join(__dirname, settings.System.Directories.output);
 var workingDirectory = path.join(__dirname, settings.System.Directories.working);
-<<<<<<< HEAD
-
-// check required directory
-fileutil.ensureDirectory(cacheDirectory);
-fileutil.ensureDirectory(downloadDirectory);
-fileutil.ensureDirectory(outputDirectory);
-fileutil.ensureDirectory(workingDirectory);
-=======
 var configDirectory = path.join(__dirname, settings.System.Directories.config);
 
 // check required directory
@@ -61,7 +53,6 @@ if (fs.existsSync(path.join(configDirectory, 'last_task.json'))) {
 	});
 }
 
->>>>>>> refs/heads/master
 if (fileutil.getFileCount(outputDirectory) > 0) {
 		$warning_msg.html('Warning: Your output folider (app/output) is exist and it may be overwritten.');
 		$warning_msg.css({'color': 'red'});
