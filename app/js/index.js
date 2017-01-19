@@ -28,12 +28,40 @@ var cacheDirectory = path.join(__dirname, settings.System.Directories.cache);
 var downloadDirectory = path.join(__dirname, settings.System.Directories.download);
 var outputDirectory = path.join(__dirname, settings.System.Directories.output);
 var workingDirectory = path.join(__dirname, settings.System.Directories.working);
+<<<<<<< HEAD
 
 // check required directory
 fileutil.ensureDirectory(cacheDirectory);
 fileutil.ensureDirectory(downloadDirectory);
 fileutil.ensureDirectory(outputDirectory);
 fileutil.ensureDirectory(workingDirectory);
+=======
+var configDirectory = path.join(__dirname, settings.System.Directories.config);
+
+// check required directory
+fileutil.ensureDirectory(cacheDirectory);
+fileutil.ensureDirectory(downloadDirectory);
+fileutil.ensureDirectory(outputDirectory);
+fileutil.ensureDirectory(workingDirectory);
+
+if (fs.existsSync(path.join(configDirectory, 'last_task.json'))) {
+	dialog.showMessageBox({
+		type: 'info',
+		buttons: ['Continue', 'Ignore'],
+		defaultId: 0,
+		cancelId: 1,
+		title: 'Info',
+		message: 'You have a previous task which is not completed. Do you want to continue it?'
+	}, function(choice) {
+		if (choice === 0) {
+			var lastTask = require(path.join(configDirectory, 'last_task.json'));
+			ipcRenderer.send('setlasttask', lastTask);
+			ipcRenderer.send('openfile', lastTask.input_directory);
+		}
+	});
+}
+
+>>>>>>> refs/heads/master
 if (fileutil.getFileCount(outputDirectory) > 0) {
 		$warning_msg.html('Warning: Your output folider (app/output) is exist and it may be overwritten.');
 		$warning_msg.css({'color': 'red'});

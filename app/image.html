@@ -12,6 +12,7 @@
 <img id="current_image" src="#" style="display:none"/>
 <div id="crop_box" class="cropper" style="display:none"></div>
 </div>
+<<<<<<< HEAD
 <div id="error_box" style="display:none; position: absolute; top:30%; left: 10%; color:red; font-size:20pt; z-index:20">
 Error
 </div>
@@ -42,3 +43,42 @@ onload="window.$ = window.jQuery = module.exports;">
  
 </body>
 </html>
+=======
+
+<div id="error_box" style="display:none; position: absolute; top:30%; left: 10%; color:red; font-size:20pt; z-index:20">
+Error
+</div>
+
+<div id="info" style="position:absolute; left: 80%; top: 0; width: 20%; height:30%; background-color:navy; z-index: 10">
+<div id="image_counter"><span id="current_count">1</span> / <span id="image_total">100</span></div>
+<div id="image_ratio" style="color:lightgreen;"></div>
+<div id="mode_ind" style="color:yellow;">Crop Mode</div>
+</div>
+
+<div id="control" style="position:absolute; left: 80%; top: 30%; width: 20%; height:40%; background-color:navy; z-index: 10">
+<table style="margin-top:20px">
+<tr><td>Brightness</td><td><input type="range" id="brightness_range" name="brightness" min="0" max="100" value="50"/></td></tr>
+<tr><td>Contrast</td><td><input type="range" id="contrast_range" name="contrast" min="0" max="100" value="50"/></td></tr>
+<tr rowspan="2"><td><input type="button" id="reset_button" value="Reset"/> <input type="button" id="apply_button" value="Apply"/></td></tr>
+</table>
+</div>
+
+<div id="hint" style="position: absolute; left: 80%; top: 70%; width: 20%; height: 30%; background-color:navy; z-index:10">
+<b>HotKey</b><br>
+R: Reload<br>
+D: Delete<br>
+B: Blur<br>
+C: Crop<br>
+SPC or &#x2193: Skip<br>
+&#x2192: Save &amp; Next<br>
+</div>
+
+<div id="statusbar" style="position: absolute; left:0; top: calc(100% - 30px); width:100%; height: 30px; z-index: 11; color: white;">
+Ready
+</div>
+
+<script src="js/image.js"></script>
+
+</body>
+</html>
+>>>>>>> refs/heads/master

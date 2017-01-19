@@ -2,6 +2,10 @@
 	"System": {
 		"Directories": {
 			"cache": "./cache",
+<<<<<<< HEAD
+=======
+			"config": "./config",
+>>>>>>> refs/heads/master
 			"download": "./download",
 			"output": "./output",
 			"working": "./working"
